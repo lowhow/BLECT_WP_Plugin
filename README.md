@@ -1,10 +1,12 @@
 # BLECT_WP_Plugin
 Plugin boiletplate based on WPPB
 
-1. Clone to your own folder name
+1. Get a copy of your custom WPPB from [http://wppb.me/](http://wppb.me/) , place it in plugins folder
+
+2. Clone to your own folder name
 	git clone https://github.com/lowhow/BLECT_WP_Plugin {folder_name}
 
-2. Change namespace to your own name in `composer.json`
+3. Change namespace to your own name in `composer.json`
 	```
 	"autoload":
 	{
@@ -14,8 +16,6 @@ Plugin boiletplate based on WPPB
 		}
 	}
 	```
-
-3. Get a copy of your custom WPPB from [http://wppb.me/](http://wppb.me/) , place it in plugins folder
 
 4. Add this line to your main plugin file `{your_plugin_slug}.php`:
 	```
