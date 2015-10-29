@@ -1,0 +1,17 @@
+{
+    "name": "how/howwp",
+    "description": "How WP Plugin packages",
+    "authors": [
+        {
+            "name": "How",
+            "email": "lowhow@gmail.com"
+        }
+    ],
+	"autoload":
+	{
+			"psr-4":
+			{
+				"Mymp\\": "global"
+			}
+	}
+}
