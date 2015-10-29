@@ -5,7 +5,7 @@ Plugin boiletplate based on WPPB
 
 2. Clone to your own folder name
 	```
-	git clone https://github.com/lowhow/BLECT_WP_Plugin {folder_name}
+	git clone https://github.com/lowhow/BLECT_WP_Plugin .
 	```
 
 3. Change namespace to your own name in `composer.json`
