@@ -3,12 +3,15 @@ Plugin boiletplate based on WPPB
 
 1. Get a copy of your custom WPPB from [http://wppb.me/](http://wppb.me/) , place it in plugins folder
 
-2. Clone to your own folder name
+2. Clone to your plugin folder name
 	```
-	git clone https://github.com/lowhow/BLECT_WP_Plugin .
+	git clone https://github.com/lowhow/BLECT_WP_Plugin
 	```
+3. Move files from repo out to your plugin's root folder.
 
-3. Change namespace to your own name in `composer.json`
+4. Remove `BLECT_WP_Plugin` folder.
+
+5. Change namespace to your own name in `composer.json`
 	```
 	"autoload":
 	{
@@ -19,7 +22,7 @@ Plugin boiletplate based on WPPB
 	}
 	```
 
-4. Add this line to your main plugin file `{your_plugin_slug}.php`:
+6. Add this line to your main plugin file `{your_plugin_slug}.php`:
 	```
 	if ( ! defined( 'WPINC' ) ) {
 		die;
@@ -27,7 +30,7 @@ Plugin boiletplate based on WPPB
 	require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 	```
 	
-5. To test the plugin upon activation, add these line to `includes/class-{your_plugin_slug}.php`
+7. To test the plugin upon activation, add these line to `includes/class-{your_plugin_slug}.php`
 	```
 	private function define_admin_hooks() {
 	
